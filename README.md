@@ -6,6 +6,7 @@ Si possono definire vari profili spring dove ognuno ha il suo application-{profi
 Quindi creare tanti .properties quanti profili si hanno.
 
 Nel pom.xml definire i profili che si vogliono configurare:
+```
 <profiles>      	
   	<profile>
     	<id>dev</id>
@@ -18,14 +19,17 @@ Nel pom.xml definire i profili che si vogliono configurare:
 		</activation>
   	</profile>
 </profiles>
+```
 
 e sotto il tag <build> il filtering:
+```
 <resources>
     <resource>
         <directory>src/main/resources</directory>
         <filtering>true</filtering>
     </resource>
 </resources>
+```
 
 Ora nell'application.properties (solo quello 'local') definire la property:
 spring.profiles.active=@activatedProperties@
