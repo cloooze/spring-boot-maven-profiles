@@ -8,10 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Utente implements Serializable {
+public class Utente extends Product implements Serializable {
 	
-	@Id
-	public Long id;
 	
 	public String nome;
 	
