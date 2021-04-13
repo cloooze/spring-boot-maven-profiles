@@ -40,3 +40,13 @@ Le properties con stessa chiave presenti in entrambi i file verranno sovrascritt
 
 E' possibile impostare un profilo diverso da quello di default lanciando l'applicazione da riga di comando e passare la property:
 mvn spring-boot:run -Dspring-boot.run.profiles=prod
+
+E' anche possibile valorizzare placeholder presenti in altri file (ad es. logback.xml) con valori definiti nelle properties del tag <profile> nel pom.xml.
+Nell'esempio precedente abbiamo definito una property per il profilo dev
+```
+<test.property>dev</test.property>
+```
+Il valore di questa properità potrebbe essere letto da un altro file così:
+	```
+	@test.property@
+	```
