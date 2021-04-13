@@ -35,8 +35,9 @@ Ora nell'application.properties (solo quello 'local') definire la property:
 spring.profiles.active=@activatedProperties@
 
 In questo caso di default se nessun profilo verrà specificato in fase di build verrà caricato il 'dev'.
-Questo vuol dire che tutte le property esistenti sia nel .properties 'local' che nel -dev.properties verranno caricate.
-Le properties con stessa chiave presenti in entrambi i file verranno sovrascritte con quelle presenti nel -dev.properties.
+ATTENZIONE!
+Questo non vuol dire che solo le properties nel dev verranno caricate, ma sia quelle nel 'dev' che nel 'local'.
+Tuttavia le properties con stessa chiave presenti in entrambi i file verranno sovrascritte con quelle presenti nel -dev.properties.
 
 E' possibile impostare un profilo diverso da quello di default lanciando l'applicazione da riga di comando e passare la property:
 mvn spring-boot:run -Dspring-boot.run.profiles=prod
