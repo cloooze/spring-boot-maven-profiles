@@ -9,13 +9,13 @@ Nel pom.xml definire i profili che si vogliono configurare:
 ```
 <profiles>      	
   	<profile>
-    	<id>dev</id>
-    	<properties>
-    		<activatedProperties>dev</activatedProperties>
-    		<test.property>dev</test.property>
+    		<id>dev</id>
+    		<properties>
+    			<activatedProperties>dev</activatedProperties>
+    			<test.property>dev</test.property>
 		</properties> 
 		<activation>
-    		<activeByDefault>true</activeByDefault>
+    			<activeByDefault>true</activeByDefault>
 		</activation>
   	</profile>
 </profiles>
