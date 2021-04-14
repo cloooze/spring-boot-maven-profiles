@@ -3,7 +3,7 @@ Progetto che dimostra l'utilizzo dei profili spring boot con maven
 
 Si possono definire vari profili spring dove ognuno ha il suo application-{profile}.properties.
 
-Quindi creare tanti .properties quanti profili si hanno.
+Quindi creare tanti .properties quanti profili si hanno..
 
 Nel pom.xml definire i profili che si vogliono configurare:
 ```
