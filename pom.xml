@@ -26,7 +26,7 @@
         		<test.property>dev</test.property>
     		</properties> 
     		<activation>
-        		<activeByDefault>false</activeByDefault>
+        		<activeByDefault>true</activeByDefault>
     		</activation>
       	</profile>
    	</profiles>
